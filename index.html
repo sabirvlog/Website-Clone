@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Product Image- A Photoshop</title>
+</head>
+<body>
+	<div class="main">
+		<ul class="nav">
+			<li><a href="#" id="active">About us</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Learn more</a></li>
+			<li><a href="#">Graphic designs</a></li>
+		</ul>
+		<div class="right">
+		<label>Search</label>
+		<input type="searchbox" name="search" placeholder="Search Here" class="search">
+	</div>
+
+<!--  Next images portion * -->
+	<div class="Product">
+		<div class="small-img">
+			<img src="small.jpg" alt="image" onclick="myFunction(this)">
+			<img src="small1.jpg" alt="image" onclick="myFunction(this)">
+			<img src="small2.jpg" alt="image" onclick="myFunction(this)">
+			<img src="small3.jpg" alt="image" onclick="myFunction(this)">
+			<img src="small4.jpg" alt="image" onclick="myFunction(this)">
+		</div>
+	
+	<div class="large-img">
+		<img id="ImageBox" src="big.jpg">
+	</div>
+
+ </div>	
+ 		<div class="content">
+ 			<h3>Creative and attractive PhotoShots & designs</h3>
+ 			<p>Learn and seek how to make attractive photoshot with Lorem ipsum<br> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <br>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 			<li>Make creative designs</li>
+ 			<li>Learn how to Design and Photo shot</li>
+ 			<li>Become a pro level graphic designer</li>
+ 			<br>
+ 			
+ 			<a href="#">4.5 +</a>
+ 			<mark> 11,000 ratings and 2500 reviews</mark> 
+ 			 <span id="imp">
+ 			 	<p><strong>RS. 3000 </strong><del>Rs. 6000</del><ins> (50% OFF) </ins></p>
+ 			 </span>
+ 			 <div class="button">
+ 			 <button type="button" name="btn" class="btn">Buy Now</button>
+ 			 <button type="button" name="btn" class="btn-1">See On Amazon</button>
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 		<script>
+ 			function myFunction(smallImg) {  // SmallImg we get value from "this"
+ 				// body...
+ 				var fullImg = document.getElementById('ImageBox');
+ 				fullImg.src = smallImg.src;
+ 			}
+ 		</script>
+</body>
+</html>
